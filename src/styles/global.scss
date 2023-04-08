@@ -1,0 +1,51 @@
+/* Mandatory Bootstrap imports https: //getbootstrap.com/docs/4.0/getting-started/theming/#importing */ 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+/* Colors */
+
+$japan-flag-red: #BC002D;
+
+$theme-colors: (
+    "primary": $japan-flag-red,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
+/* Sections colors */
+
+$body-color: #333;
+$body-bg: #FFF;
+$footer-bg: #f0f0f0;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/* Custom CSS Rules */
+
+/* Typography */
+
+.intro-text {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.accent {
+    color: $japan-flag-red;
+}
+
+/* Layout Elements */
+
+footer {
+
+    background-color: $footer-bg;
+
+}
